@@ -44,7 +44,7 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 DATABASES = {
     "default": env.db(
         "DATABASE_URL",
-        default="postgres://localhost/entrega_intermedia",
+        default="postgres://mvvwvjga:5ZY42E0cP9d0hOZD97u6rfF2pLDbjspb@kesavan.db.elephantsql.com/mvvwvjga",
     ),
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
@@ -85,6 +85,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "entrega_intermedia.users",
+    "entrega_intermedia.mvt",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
