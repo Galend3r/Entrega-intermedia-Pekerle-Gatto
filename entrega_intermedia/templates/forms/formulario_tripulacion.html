@@ -2,6 +2,13 @@
 
 {% block content %}
 
-TEST tripulacion
+<form action='/formulario/tripulacion/' method='POST'>
+    {% csrf_token %}
+
+    {{form.as_table}}
+    
+    <input type="submit" value="Enviar">
+
+</form>
 
 {% endblock %}
